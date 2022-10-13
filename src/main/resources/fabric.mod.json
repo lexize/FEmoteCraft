@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "femotecraft",
+  "version": "${version}",
+  "name": "Femotecraft",
+  "description": "Figura addon that adds ability to get info about current emotecraft animation",
+  "authors": [
+    "Lexize"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "figura_api": [
+      "org.lexize.femotecraft.FEmoteCraft"
+    ]
+  },
+  "depends": {
+    "figura": ">=0.1.0-rc.7",
+    "emotecraft": "*"
+  }
+}
