@@ -7,7 +7,9 @@
   "authors": [
     "Lexize"
   ],
-  "contact": {},
+  "contact": {
+    "sources": "https://github.com/lexize/FEmoteCraft"
+  },
   "license": "MIT",
   "environment": "client",
   "entrypoints": {
