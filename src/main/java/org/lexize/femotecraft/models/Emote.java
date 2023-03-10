@@ -77,7 +77,7 @@ public class Emote {
         return KeyframesContainer.ofPart(part);
     }
 
-    public static Emote of(IEmotePlayer emote, IEmotePlayerEntity player) {
-        return new Emote(emote, player);
+    public static Emote of(IEmotePlayerEntity player) {
+        return new Emote(player.getEmote(), player);
     }
 }

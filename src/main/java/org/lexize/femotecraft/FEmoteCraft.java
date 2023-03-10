@@ -19,7 +19,7 @@ import org.lexize.femotecraft.models.Emote;
 import org.lexize.femotecraft.models.Keyframe;
 import org.lexize.femotecraft.models.KeyframesContainer;
 import org.lexize.femotecraft.models.ModelPartDefaultTransforms;
-import org.moon.figura.avatars.Avatar;
+import org.moon.figura.avatar.Avatar;
 import org.moon.figura.lua.FiguraAPI;
 import org.moon.figura.lua.LuaNotNil;
 import org.moon.figura.lua.LuaWhitelist;
@@ -76,7 +76,7 @@ public class FEmoteCraft implements FiguraAPI {
     @LuaWhitelist
     public Emote getCurrentEmote() {
         preparePlayerEntity();
-        return Emote.of(_emotecraftPlayer.getEmote(), _emotecraftPlayer);
+        return Emote.of(_emotecraftPlayer);
     }
     @LuaWhitelist
     public void preparePlayerEntity() {
